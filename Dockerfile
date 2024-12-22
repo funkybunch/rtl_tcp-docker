@@ -1,4 +1,4 @@
-FROM ubuntu:noble
+FROM ubuntu:latest
 
 WORKDIR /usr/src/app
 
