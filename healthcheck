@@ -1,0 +1,9 @@
+#! /bin/bash
+RESULT="$(ps aux)"
+if [[ ${RESULT} == */usr/bin/rtl_tcp* ]]; then
+  echo "rtl_tcp is running";
+  exit 0;
+else
+  echo "rtl_tcp is not running";
+  exit 1;
+fi
